@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM fiscalize.Suspeita WHERE suspeita=false;
