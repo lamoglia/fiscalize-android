@@ -1,0 +1,26 @@
+<head>
+  <title>fiscalize-meteor-pro</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+{{> fiscalizacoes}}
+
+</body>
+
+<template name="fiscalizacoes">
+  <ol class="fiscalizacoes">
+      {{#each fiscalizacoes}}
+          {{> fiscalizacao}}
+      {{/each}}
+  </ol>
+</template>
+
+<template name="fiscalizacao">
+    <li>
+        <span class="numeroSuspeitas">{{numeroSuspeitas}}</span>
+        <span class="numeroConfiaveis">{{numeroConfiaveis}}</span>
+        <span class="notaFiscalId">notaFiscalId</span>
+    </li>
+</template>
