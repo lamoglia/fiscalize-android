@@ -18,7 +18,7 @@
 	    <![endif]-->
 	</head>
 
-	<h1>Notas Fiscais Mais Suspeitas</h1><br/>
+	<h1>Detalhes da Nota Fiscal</h1><br/>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -30,13 +30,18 @@
 		include_once 'web_include.php';
 		include_once INCLUDE_ROOT.'/controllers/FiscalizeController.class.php';
 	
-		$fiscalizeController = new FiscalizeController();
+		if(isset($_GET["notaFiscalId"])) {
+			$notaFiscalId = $_GET["notaFiscalId"];
+	
+			$fiscalizeController = new FiscalizeController();
+			
+			$html = $fiscalizeController->consultarNotaFiscal($notaFiscalId);
+			echo $html;
+			
+		} else {
+			echo "Erro! Passe notaFiscalId como parâmetro!";
+		}
 		
-		$html = $fiscalizeController->consultarFiscalizacoes();
-		echo "<p>$html</p>";
-		
-		//$html = $fiscalizeController->consultarNotaFiscal(1);
-		//echo "<p>Nota Fiscal 1 é: $html</p>";
 	?>
 	</div>
 	
