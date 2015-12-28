@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "ops-fiscalize",
+    "project_number": "1087449017560",
+    "name": "OPS Fiscalize"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087449017560:android:a024a23ad3f7b874",
+        "client_id": "android:br.net.ops.fiscalize",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "br.net.ops.fiscalize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087449017560-ebp5i5dpd17thr4sbohrhmqp2ppasntj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.net.ops.fiscalize",
+            "certificate_hash": "CC3F35D4739B571BF4AAF2CE6E09494AD7D1843F"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
